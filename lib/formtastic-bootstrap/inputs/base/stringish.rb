@@ -10,6 +10,11 @@ module FormtasticBootstrap
             builder.text_field(method, input_html_options)
           end
         end
+        def input_html_options
+          {
+              class: 'form-control'
+          }.merge(super)
+        end
 
       end
     end
