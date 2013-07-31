@@ -54,7 +54,7 @@ module FormtasticBootstrap
 
         def controls_wrapper_html_options
           {
-            :class => "controls"
+            :class => "col-lg-9"
           }
         end
 
