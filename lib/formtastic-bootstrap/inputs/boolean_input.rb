@@ -19,9 +19,15 @@ module FormtasticBootstrap
           method,
           options[:label_outside] ? check_box_html : label_text_with_embedded_checkbox,
           label_html_options.tap do |options|
-            options[:class] << "checkbox"
+            options[:class] << " "
           end
         )
+      end
+
+      def wrapper_html_options
+        super.tap do |options|
+          options[:class] << " col-lg-12 col-offset-3 checkbox"
+        end
       end
 
     end
