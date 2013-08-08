@@ -6,13 +6,13 @@ module FormtasticBootstrap
         include Formtastic::Inputs::Base::Html
 
         def input_html_options
-          if errors?
-            {
-              :class => "error"
-            }.merge(super)
-          else
-            super
-          end
+          result = {
+            :class => "form-control"
+          }
+          
+          result[:validate] = options[:validate] if options[:validate]
+
+          result.merge(super)
         end
 
       end

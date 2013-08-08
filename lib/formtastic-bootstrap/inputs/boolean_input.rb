@@ -24,6 +24,9 @@ module FormtasticBootstrap
         )
       end
 
+      def check_box_html
+        template.check_box_tag("#{object_name}[#{method}]", checked_value, checked?, input_html_options.except(:class))
+      end
     end
   end
 end

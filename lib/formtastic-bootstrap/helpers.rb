@@ -6,7 +6,7 @@ module FormtasticBootstrap
     autoload :ErrorsHelper, 'formtastic-bootstrap/helpers/errors_helper'
     autoload :FieldsetWrapper, 'formtastic-bootstrap/helpers/fieldset_wrapper'
     # autoload :FileColumnDetection, 'formtastic/helpers/file_column_detection'
-    # autoload :FormHelper, 'formtastic/helpers/form_helper'
+    autoload :FormHelper, 'formtastic-bootstrap/helpers/form_helper'
     autoload :InputHelper, 'formtastic-bootstrap/helpers/input_helper'
     autoload :InputsHelper, 'formtastic-bootstrap/helpers/inputs_helper'
     # autoload :LabelHelper, 'formtastic/helpers/label_helper'
