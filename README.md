@@ -1,4 +1,8 @@
-# Formtastic Bootstrap
+# Formtastic Bootstrap3
+
+Now accepting pull requests and bug reports for bootstrap 3 enablement. For those of us a little more impatient who just can't wait.
+
+This ploject is not to replace [mjbellantoni/formtastic-bootstrap](https://github.com/mjbellantoni/formtastic-bootstrap) we're only giving upstream a head start and hopefully we will see our efforts merged back into the official project before long.
 
 A [Formtastic](https://github.com/justinfrench/formtastic) form builder that creates markup suitable for the [Twitter Bootstrap](http://twitter.github.com/bootstrap/) framework.  In theory, it should just work.  Two great tastes in one!
 
