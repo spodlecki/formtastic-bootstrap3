@@ -3,6 +3,7 @@ module FormtasticBootstrap
     class UrlInput < Formtastic::Inputs::UrlInput
       include Base
       include Base::Stringish
+      include Base::Placeholder
 
       def to_html
         bootstrap_wrapping do

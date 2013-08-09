@@ -3,6 +3,7 @@ module FormtasticBootstrap
     class NumberInput < Formtastic::Inputs::NumberInput
       include Base
       include Base::Numeric
+      include Base::Placeholder
 
       def to_html
         bootstrap_wrapping do

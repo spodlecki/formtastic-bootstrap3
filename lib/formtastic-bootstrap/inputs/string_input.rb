@@ -3,6 +3,7 @@ module FormtasticBootstrap
     class StringInput < Formtastic::Inputs::StringInput
       include Base
       include Base::Stringish
+      include Base::Placeholder
     end
   end
 end
