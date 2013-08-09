@@ -5,7 +5,7 @@ module FormtasticBootstrap
 
         include Formtastic::Inputs::Base::Errors
 
-        def error_html(inline_or_block = :inline)
+        def error_html(inline_or_block = :block)
           errors? ? send(:"error_#{builder.inline_errors}_html", inline_or_block) : ""
         end
 

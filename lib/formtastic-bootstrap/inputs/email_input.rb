@@ -3,6 +3,7 @@ module FormtasticBootstrap
     class EmailInput < Formtastic::Inputs::EmailInput
       include Base
       include Base::Stringish
+      include Base::Placeholder
 
       def to_html
         bootstrap_wrapping do

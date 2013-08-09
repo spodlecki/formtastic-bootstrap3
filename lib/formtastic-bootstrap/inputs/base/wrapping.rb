@@ -17,7 +17,7 @@ module FormtasticBootstrap
 
           control_group_wrapping do
             control_label_html <<
-            controls_wrapping do
+            controls_wrapping(label: true) do
               if prepended_or_appended?(options)
                 template.content_tag(:div, :class => add_on_wrapper_classes(options).join(" ")) do
                   input_content
@@ -45,25 +45,32 @@ module FormtasticBootstrap
           )
         end
 
-        def controls_wrapping(&block)
+        def controls_wrapping(args = {}, &block)
           template.content_tag(:div,
             [template.capture(&block), error_html].join("\n").html_safe,
-            controls_wrapper_html_options
+            controls_wrapper_html_options(args)
           )
         end
 
-        def controls_wrapper_html_options
-          {
-            :class => "col-lg-9"
-          }
+        def controls_wrapper_html_options(args)
+          if args[:label]
+            {
+              :class => "col-lg-10"
+            }
+          else
+            # Add left offset if there are no labels
+            {
+              :class => "col-lg-offset-2 col-lg-10"
+            }
+          end
         end
 
         def wrapper_html_options
           super.tap do |options|
-            options[:class] << " control-group"
+            options[:class] << " form-group"
+            options[:class] << " has-error" if errors?
           end
         end
-
 
         def add_on_wrapper_classes(options)
           [:prepend, :append, :prepend_content, :append_content].map do |key|

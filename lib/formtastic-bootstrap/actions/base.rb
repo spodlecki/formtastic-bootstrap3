@@ -17,9 +17,9 @@ module FormtasticBootstrap
       def default_button_html
         {
           :accesskey => accesskey,
-          :class => wrapper_class.strip,
+          :class => "btn btn-default"
           :id => wrapper_id
-         }
+        }
       end
 
     end

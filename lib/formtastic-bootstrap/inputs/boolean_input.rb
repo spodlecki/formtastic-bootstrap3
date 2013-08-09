@@ -24,12 +24,9 @@ module FormtasticBootstrap
         )
       end
 
-      def wrapper_html_options
-        super.tap do |options|
-          options[:class] << " col-lg-12 col-offset-3 checkbox"
-        end
+      def check_box_html
+        template.check_box_tag("#{object_name}[#{method}]", checked_value, checked?, input_html_options.except(:class))
       end
-
     end
   end
 end

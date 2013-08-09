@@ -5,7 +5,7 @@ module FormtasticBootstrap
 
         include Formtastic::Inputs::Base::Hints
 
-        def hint_html(inline_or_block = :block)
+        def hint_html(inline_or_block = :inline)
           if hint?
             hint_class = if inline_or_block == :inline
               options[:hint_class] || builder.default_inline_hint_class
