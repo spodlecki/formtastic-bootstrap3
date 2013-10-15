@@ -15,7 +15,7 @@ module FormtasticBootstrap
           end
         end
 
-        def controls_wrapper_html_options
+        def controls_wrapper_html_options(args)
           super.tap do |options|
             options[:class] = (options[:class].split << "controls-row").join(" ")
           end
