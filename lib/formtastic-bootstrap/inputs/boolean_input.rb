@@ -8,8 +8,11 @@ module FormtasticBootstrap
         control_group_wrapping do
           (options[:label_outside] ? control_label_html : "".html_safe) <<
           hidden_field_html <<
+
           controls_wrapping do
-            [label_with_nested_checkbox, hint_html].join("\n").html_safe
+            template.content_tag(:div, :class => "checkbox") do
+              [label_with_nested_checkbox, hint_html].join("\n").html_safe
+            end
           end
         end
       end
