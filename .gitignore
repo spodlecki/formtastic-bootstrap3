@@ -50,3 +50,4 @@ doc/
 
 # my ignore
 .envrc
+db/schema.rb
