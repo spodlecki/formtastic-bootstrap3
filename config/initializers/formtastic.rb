@@ -1,5 +1,7 @@
 # encoding: utf-8
 
+Formtastic::Helpers::FormHelper.builder = FormtasticBootstrap::FormBuilder
+
 # Set the default text field size when input is a string. Default is nil.
 # Formtastic::FormBuilder.default_text_field_size = 50
 
@@ -66,7 +68,7 @@
 # specifying that class here.  Defaults to Formtastic::FormBuilder.
 # Formtastic::Helpers::FormHelper.builder = MyCustomBuilder
 
-# You can opt-in to Formtastic's use of the HTML5 `required` attribute on `<input>`, `<select>` 
+# You can opt-in to Formtastic's use of the HTML5 `required` attribute on `<input>`, `<select>`
 # and `<textarea>` tags by setting this to true (defaults to false).
 # Formtastic::FormBuilder.use_required_attribute = false
 
