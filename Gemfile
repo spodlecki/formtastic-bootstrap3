@@ -15,6 +15,8 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+gem 'quiet_assets', group: :development
+
 gem 'formtastic', github: 'justinfrench/formtastic'
 gem 'formtastic-bootstrap', github: 'nickl-/formtastic-bootstrap3', branch: 'bootstrap3'
 gem 'bootstrap-generators', github: 'decioferreira/bootstrap-generators'
