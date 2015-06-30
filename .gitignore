@@ -10,3 +10,4 @@ doc
 
 # bundler
 .bundle
+.DS_Store
